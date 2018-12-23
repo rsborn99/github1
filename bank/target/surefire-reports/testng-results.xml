@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="12" total="52" passed="40">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="23101" started-at="2018-12-23T15:27:59Z" finished-at="2018-12-23T15:28:22Z">
+    <groups>
+    </groups>
+    <test name="java test" duration-ms="23101" started-at="2018-12-23T15:27:59Z" finished-at="2018-12-23T15:28:22Z">
+      <class name="com.airwallex.bank.BankTest">
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="1349" started-at="2018-12-23T23:27:59Z" data-provider="bank" finished-at="2018-12-23T23:28:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method涓篠WIFT,棰勬湡鎴愬姛, caseid=0000001, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="314" started-at="2018-12-23T23:28:00Z" data-provider="bank" finished-at="2018-12-23T23:28:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method涓篖OCAL,棰勬湡鎴愬姛, caseid=0000002, msg=Bank details saved, payment_method=LOCAL, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="328" started-at="2018-12-23T23:28:00Z" data-provider="bank" finished-at="2018-12-23T23:28:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method涓簊wift,棰勬湡澶辫触, caseid=0000003, msg='payment_method' field required, the value should be either 'LOCAL' or 'SWIFT', payment_method=swift, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="327" started-at="2018-12-23T23:28:01Z" data-provider="bank" finished-at="2018-12-23T23:28:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method涓虹┖,棰勬湡澶辫触, caseid=0000004, msg='payment_method' field required, the value should be either 'LOCAL' or 'SWIFT', payment_method=, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="333" started-at="2018-12-23T23:28:01Z" data-provider="bank" finished-at="2018-12-23T23:28:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method涓簄ull,棰勬湡澶辫触, caseid=0000005, msg='payment_method' field required, the value should be either 'LOCAL' or 'SWIFT', payment_method=null, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="359" started-at="2018-12-23T23:28:01Z" data-provider="bank" finished-at="2018-12-23T23:28:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method涓哄叾浠栧瓧绗︿覆(濡係WI),棰勬湡澶辫触, caseid=0000006, msg='payment_method' field required, the value should be either 'LOCAL' or 'SWIFT', payment_method=SWI, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="374" started-at="2018-12-23T23:28:02Z" data-provider="bank" finished-at="2018-12-23T23:28:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=US, bsb=123456, case_desc=bank_country_code涓篣S,棰勬湡鎴愬姛, caseid=0000007, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="396" started-at="2018-12-23T23:28:02Z" data-provider="bank" finished-at="2018-12-23T23:28:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=AU, bsb=123456, case_desc=bank_country_code涓篈U,棰勬湡鎴愬姛, caseid=0000008, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="344" started-at="2018-12-23T23:28:02Z" data-provider="bank" finished-at="2018-12-23T23:28:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,棰勬湡鎴愬姛, caseid=0000009, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="326" started-at="2018-12-23T23:28:03Z" data-provider="bank" finished-at="2018-12-23T23:28:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=, bsb=123456, case_desc=bank_country_code涓虹┖,棰勬湡澶辫触, caseid=0000010, msg='bank_country_code' is required, and should be one of 'US', 'AU', or 'CN', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="746" started-at="2018-12-23T23:28:03Z" data-provider="bank" finished-at="2018-12-23T23:28:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=null, bsb=123456, case_desc=bank_country_code涓簄ull,棰勬湡澶辫触, caseid=0000011, msg='bank_country_code' is required, and should be one of 'US', 'AU', or 'CN', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="731" started-at="2018-12-23T23:28:04Z" data-provider="bank" finished-at="2018-12-23T23:28:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=JP, bsb=123456, case_desc=bank_country_code涓哄叾浠栧瓧绗︿覆(濡侸P),棰勬湡澶辫触, caseid=0000012, msg='bank_country_code' is required, and should be one of 'US', 'AU', or 'CN', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="815" started-at="2018-12-23T23:28:05Z" data-provider="bank" finished-at="2018-12-23T23:28:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=Jo, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name涓�2涓瓧绗�,棰勬湡鎴愬姛, caseid=0000013, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="406" started-at="2018-12-23T23:28:05Z" data-provider="bank" finished-at="2018-12-23T23:28:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=JohnJohn12, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name涓�10涓瓧绗�,棰勬湡鎴愬姛, caseid=0000014, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="431" started-at="2018-12-23T23:28:06Z" data-provider="bank" finished-at="2018-12-23T23:28:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=鏉板厠, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name涓�2涓腑鏂�,棰勬湡鎴愬姛, caseid=0000015, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="406" started-at="2018-12-23T23:28:06Z" data-provider="bank" finished-at="2018-12-23T23:28:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=J, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name涓�1涓瓧绗�,棰勬湡澶辫触, caseid=0000016, msg=Length of account_name should be between 2 and 10, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="405" started-at="2018-12-23T23:28:07Z" data-provider="bank" finished-at="2018-12-23T23:28:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith1, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name涓�11涓瓧绗�,棰勬湡澶辫触, caseid=0000017, msg=Length of account_name should be between 2 and 10, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="429" started-at="2018-12-23T23:28:07Z" data-provider="bank" finished-at="2018-12-23T23:28:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=1, bank_country_code=US, bsb=123456, case_desc=bank_country_code涓篣S,account_number涓�1涓瓧绗︿覆,棰勬湡鎴愬姛, caseid=0000018, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="422" started-at="2018-12-23T23:28:07Z" data-provider="bank" finished-at="2018-12-23T23:28:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=12345678901234567, bank_country_code=US, bsb=123456, case_desc=bank_country_code涓篣S,account_number涓�17涓瓧绗︿覆,棰勬湡鎴愬姛, caseid=0000019, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="434" started-at="2018-12-23T23:28:08Z" data-provider="bank" finished-at="2018-12-23T23:28:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=, bank_country_code=US, bsb=123456, case_desc=bank_country_code涓篣S,account_number涓�0涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000020, msg=Length of account_number should be between 1 and 11 when bank_country_code is 'US', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found ['account_number' is required]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found ['account_number' is required]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="392" started-at="2018-12-23T23:28:08Z" data-provider="bank" finished-at="2018-12-23T23:28:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=123456789012345678, bank_country_code=US, bsb=123456, case_desc=bank_country_code涓篣S,account_number涓�18涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000021, msg=Length of account_number should be between 1 and 11 when bank_country_code is 'US', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="1062" started-at="2018-12-23T23:28:09Z" data-provider="bank" finished-at="2018-12-23T23:28:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=123456, bank_country_code=AU, bsb=123456, case_desc=bank_country_code涓篈U,account_number涓�6涓瓧绗︿覆,棰勬湡鎴愬姛, caseid=0000022, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="360" started-at="2018-12-23T23:28:10Z" data-provider="bank" finished-at="2018-12-23T23:28:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=123456789, bank_country_code=AU, bsb=123456, case_desc=bank_country_code涓篈U,account_number涓�9涓瓧绗︿覆,棰勬湡鎴愬姛, caseid=0000023, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="369" started-at="2018-12-23T23:28:10Z" data-provider="bank" finished-at="2018-12-23T23:28:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=12345, bank_country_code=AU, bsb=123456, case_desc=bank_country_code涓篈U,account_number涓�5涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000024, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="358" started-at="2018-12-23T23:28:10Z" data-provider="bank" finished-at="2018-12-23T23:28:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=1234567890, bank_country_code=AU, bsb=123456, case_desc=bank_country_code涓篈U,account_number涓�10涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000025, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="368" started-at="2018-12-23T23:28:11Z" data-provider="bank" finished-at="2018-12-23T23:28:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=12345678, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,account_number涓�8涓瓧绗︿覆,棰勬湡鎴愬姛, caseid=0000026, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="374" started-at="2018-12-23T23:28:11Z" data-provider="bank" finished-at="2018-12-23T23:28:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=12345678901234567890, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,account_number涓�20涓瓧绗︿覆,棰勬湡鎴愬姛, caseid=0000027, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="390" started-at="2018-12-23T23:28:12Z" data-provider="bank" finished-at="2018-12-23T23:28:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=1234567, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,account_number涓�7涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000028, msg=xxx, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="377" started-at="2018-12-23T23:28:12Z" data-provider="bank" finished-at="2018-12-23T23:28:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=jack, account_number=12345678901234567890, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,account_number涓�21涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000029, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="359" started-at="2018-12-23T23:28:12Z" data-provider="bank" finished-at="2018-12-23T23:28:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code绗�5浣嶅拰绗�6浣嶄笌bank contry code鍖归厤(褰揵ank contry code涓篣S),棰勬湡鎴愬姛, caseid=0000030, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="368" started-at="2018-12-23T23:28:13Z" data-provider="bank" finished-at="2018-12-23T23:28:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=AU, bsb=123456, case_desc=swift_code绗�5浣嶅拰绗�6浣嶄笌bank contry code鍖归厤(褰揵ank contry code涓篈U),棰勬湡鎴愬姛, caseid=0000031, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="392" started-at="2018-12-23T23:28:13Z" data-provider="bank" finished-at="2018-12-23T23:28:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=CN, bsb=12345678, case_desc=swift_code绗�5浣嶅拰绗�6浣嶄笌bank contry code鍖归厤(褰揵ank contry code涓篊N),棰勬湡鎴愬姛, caseid=0000032, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="392" started-at="2018-12-23T23:28:13Z" data-provider="bank" finished-at="2018-12-23T23:28:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code涓虹┖锛堝綋payment_method涓篠WIFT锛�,棰勬湡澶辫触, caseid=0000033, msg='swift_code' is required when payment method is 'SWIFT', payment_method=SWIFT, response_status=400, run=true, swift_code=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="415" started-at="2018-12-23T23:28:14Z" data-provider="bank" finished-at="2018-12-23T23:28:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code绗�5浣嶅拰绗�6浣嶄笌bank contry code涓嶅尮閰�(褰揵ank contry code涓篣S),棰勬湡澶辫触, caseid=0000034, msg=The swift code is not valid for the given bank country code: US, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="390" started-at="2018-12-23T23:28:14Z" data-provider="bank" finished-at="2018-12-23T23:28:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code绗�5浣嶅拰绗�6浣嶄笌bank contry code涓嶅尮閰�(褰揵ank contry code涓篈U),棰勬湡澶辫触, caseid=0000035, msg=The swift code is not valid for the given bank country code: AU, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [The swift code is not valid for the given bank country code: AU] but found [The swift code is not valid for the given bank country code: US]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [The swift code is not valid for the given bank country code: AU] but found [The swift code is not valid for the given bank country code: US]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="426" started-at="2018-12-23T23:28:15Z" data-provider="bank" finished-at="2018-12-23T23:28:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code绗�5浣嶅拰绗�6浣嶄笌bank contry code涓嶅尮閰�(褰揵ank contry code涓篊N),棰勬湡澶辫触, caseid=0000036, msg=The swift code is not valid for the given bank country code: CN, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [The swift code is not valid for the given bank country code: CN] but found [The swift code is not valid for the given bank country code: US]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [The swift code is not valid for the given bank country code: CN] but found [The swift code is not valid for the given bank country code: US]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="360" started-at="2018-12-23T23:28:15Z" data-provider="bank" finished-at="2018-12-23T23:28:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code涓�8浣�,棰勬湡鎴愬姛, caseid=0000037, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="359" started-at="2018-12-23T23:28:15Z" data-provider="bank" finished-at="2018-12-23T23:28:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code涓�11浣�,棰勬湡鎴愬姛, caseid=0000038, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJABC}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="402" started-at="2018-12-23T23:28:16Z" data-provider="bank" finished-at="2018-12-23T23:28:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code涓�9浣�,棰勬湡澶辫触US, caseid=0000039, msg=error, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJA}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="390" started-at="2018-12-23T23:28:16Z" data-provider="bank" finished-at="2018-12-23T23:28:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=CN, bsb=123456, case_desc=swift_code涓�9浣�,棰勬湡澶辫触CN, caseid=0000040, msg=error, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJA}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="390" started-at="2018-12-23T23:28:17Z" data-provider="bank" finished-at="2018-12-23T23:28:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=123456, case_desc=bsb涓�6浣�,bank country涓篈U,棰勬湡鎴愬姛, caseid=0000041, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="385" started-at="2018-12-23T23:28:17Z" data-provider="bank" finished-at="2018-12-23T23:28:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=12345, case_desc=bsb涓�5浣�,bank country涓篈U,棰勬湡澶辫触, caseid=0000042, msg=Length of 'bsb' should be 6, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="374" started-at="2018-12-23T23:28:17Z" data-provider="bank" finished-at="2018-12-23T23:28:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=1234567, case_desc=bsb涓�7浣�,bank country涓篈U,棰勬湡澶辫触, caseid=0000043, msg=Length of 'bsb' should be 6, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="395" started-at="2018-12-23T23:28:18Z" data-provider="bank" finished-at="2018-12-23T23:28:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=, case_desc=bsb涓虹┖,bank country涓篈U,棰勬湡澶辫触, caseid=00000044, msg='bsb' is required when bank country code is 'AU', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="375" started-at="2018-12-23T23:28:18Z" data-provider="bank" finished-at="2018-12-23T23:28:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=, case_desc=bsb涓虹┖,bank country涓篣S,棰勬湡鎴愬姛, caseid=0000045, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="375" started-at="2018-12-23T23:28:18Z" data-provider="bank" finished-at="2018-12-23T23:28:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=CN, bsb=, case_desc=bsb涓虹┖,bank country涓篊N,棰勬湡鎴愬姛, caseid=0000046, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="954" started-at="2018-12-23T23:28:19Z" data-provider="bank" finished-at="2018-12-23T23:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=123456, case_desc=aba涓�9浣�,bank country涓篣S,棰勬湡鎴愬姛, caseid=0000047, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=true, swift_code=ICBCUSBJA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="368" started-at="2018-12-23T23:28:20Z" data-provider="bank" finished-at="2018-12-23T23:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=12345678, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=12345, case_desc=aba涓�8浣�,bank country涓篣S,棰勬湡澶辫触, caseid=0000048, msg=Length of 'aba' should be 9, payment_method=SWIFT, response_status=400, run=true, swift_code=ICBCUSBJA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="359" started-at="2018-12-23T23:28:20Z" data-provider="bank" finished-at="2018-12-23T23:28:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=1234567890, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=1234567, case_desc=aba涓�10浣�,bank country涓篣S,棰勬湡澶辫触, caseid=0000049, msg=Length of 'aba' should be 9, payment_method=SWIFT, response_status=400, run=true, swift_code=ICBCUSBJA}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="FAIL" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="343" started-at="2018-12-23T23:28:21Z" data-provider="bank" finished-at="2018-12-23T23:28:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=123456, case_desc=aba涓虹┖,bank country涓篣S,棰勬湡澶辫触, caseid=0000050, msg='bsb' is required when bank country code is 'US', payment_method=SWIFT, response_status=400, run=true, swift_code=ICBCUSBJ}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="384" started-at="2018-12-23T23:28:21Z" data-provider="bank" finished-at="2018-12-23T23:28:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=123456, case_desc=aba涓虹┖,bank country涓篈U,棰勬湡鎴愬姛, caseid=0000051, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=true, swift_code=ICBCAUBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+        <test-method status="PASS" signature="testBank(java.util.Map)[pri:0, instance:com.airwallex.bank.BankTest@6b143ee9]" name="testBank" duration-ms="375" started-at="2018-12-23T23:28:21Z" data-provider="bank" finished-at="2018-12-23T23:28:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{aba=, account_name=John Swith, account_number=12345678, bank_country_code=CN, bsb=123456, case_desc=aba涓虹┖,bank country涓篊N,棰勬湡鎴愬姛, caseid=0000052, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=true, swift_code=ICBCCNBJ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBank -->
+      </class> <!-- com.airwallex.bank.BankTest -->
+    </test> <!-- java test -->
+  </suite> <!-- Default Suite -->
+</testng-results>

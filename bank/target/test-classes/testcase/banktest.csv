@@ -1,0 +1,53 @@
+caseid|case_desc|run|payment_method|bank_country_code|account_name|account_number|swift_code|bsb|aba|response_status|msg
+0000001|payment_method为SWIFT,预期成功||SWIFT|US|John Swith|123|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000002|payment_method为LOCAL,预期成功||LOCAL|US|John Swith|123|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000003|payment_method为swift,预期失败||swift|US|John Swith|123|ICBCUSBJ|123456|123456789|400|'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'
+0000004|payment_method为空,预期失败|||US|John Swith|123|ICBCUSBJ|123456|123456789|400|'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'
+0000005|payment_method为null,预期失败||null|US|John Swith|123|ICBCUSBJ|123456|123456789|400|'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'
+0000006|payment_method为其他字符串(如SWI),预期失败||SWI|US|John Swith|123|ICBCUSBJ|123456|123456789|400|'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'
+0000007|bank_country_code为US,预期成功||SWIFT|US|John Swith|1234567|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000008|bank_country_code为AU,预期成功||SWIFT|AU|John Swith|1234567|ICBCAUBJ|123456|123456789|200|Bank details saved
+0000009|bank_country_code为CN,预期成功||SWIFT|CN|John Swith|1234567|ICBCCNBJ|123456|123456789|200|Bank details saved
+0000010|bank_country_code为空,预期失败||SWIFT||John Swith|1234567|ICBCUSBJ|123456|123456789|400|'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'
+0000011|bank_country_code为null,预期失败||SWIFT|null|John Swith|1234567|ICBCUSBJ|123456|123456789|400|'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'
+0000012|bank_country_code为其他字符串(如JP),预期失败||SWIFT|JP|John Swith|1234567|ICBCUSBJ|123456|123456789|400|'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'
+0000013|account_name为2个字符,预期成功||SWIFT|US|Jo|123|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000014|account_name为10个字符,预期成功||SWIFT|US|JohnJohn12|123|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000015|account_name为2个中文,预期成功||SWIFT|US|杰克|123|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000016|account_name为1个字符,预期失败||SWIFT|US|J|123|ICBCUSBJ|123456|123456789|400|Length of account_name should be between 2 and 10
+0000017|account_name为11个字符,预期失败||SWIFT|US|John Swith1|123|ICBCUSBJ|123456|123456789|400|Length of account_name should be between 2 and 10
+0000018|bank_country_code为US,account_number为1个字符串,预期成功||SWIFT|US|jack|1|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000019|bank_country_code为US,account_number为17个字符串,预期成功||SWIFT|US|jack|12345678901234567|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000020|bank_country_code为US,account_number为0个字符串,预期失败||SWIFT|US|jack||ICBCUSBJ|123456|123456789|400|Length of account_number should be between 1 and 11 when bank_country_code is 'US'
+0000021|bank_country_code为US,account_number为18个字符串,预期失败||SWIFT|US|jack|123456789012345678|ICBCUSBJ|123456|123456789|400|Length of account_number should be between 1 and 11 when bank_country_code is 'US'
+0000022|bank_country_code为AU,account_number为6个字符串,预期成功||SWIFT|AU|jack|123456|ICBCAUBJ|123456|123456789|200|Bank details saved
+0000023|bank_country_code为AU,account_number为9个字符串,预期成功||SWIFT|AU|jack|123456789|ICBCAUBJ|123456|123456789|200|Bank details saved
+0000024|bank_country_code为AU,account_number为5个字符串,预期失败||SWIFT|AU|jack|12345|ICBCAUBJ|123456|123456789|400|Bank details saved
+0000025|bank_country_code为AU,account_number为10个字符串,预期失败||SWIFT|AU|jack|1234567890|ICBCAUBJ|123456|123456789|400|Bank details saved
+0000026|bank_country_code为CN,account_number为8个字符串,预期成功||SWIFT|CN|jack|12345678|ICBCCNBJ|123456|123456789|200|Bank details saved
+0000027|bank_country_code为CN,account_number为20个字符串,预期成功||SWIFT|CN|jack|12345678901234567890|ICBCCNBJ|123456|123456789|200|Bank details saved
+0000028|bank_country_code为CN,account_number为7个字符串,预期失败||SWIFT|CN|jack|1234567|ICBCCNBJ|123456|123456789|400|xxx
+0000029|bank_country_code为CN,account_number为21个字符串,预期失败||SWIFT|CN|jack|12345678901234567890|ICBCCNBJ|123456|123456789|400|Bank details saved
+0000030|swift_code第5位和第6位与bank contry code匹配(当bank contry code为US),预期成功||SWIFT|US|John Swith|123|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000031|swift_code第5位和第6位与bank contry code匹配(当bank contry code为AU),预期成功||SWIFT|AU|John Swith|1234567|ICBCAUBJ|123456|123456789|200|Bank details saved
+0000032|swift_code第5位和第6位与bank contry code匹配(当bank contry code为CN),预期成功||SWIFT|CN|John Swith|1234567|ICBCCNBJ|12345678|123456789|200|Bank details saved
+0000033|swift_code为空（当payment_method为SWIFT）,预期失败|true|SWIFT|US|John Swith|123||123456|123456789|400|'swift_code' is required when payment method is 'SWIFT'
+0000034|swift_code第5位和第6位与bank contry code不匹配(当bank contry code为US),预期失败||SWIFT|US|John Swith|123|ICBCAUBJ|123456|123456789|400|The swift code is not valid for the given bank country code: US
+0000035|swift_code第5位和第6位与bank contry code不匹配(当bank contry code为AU),预期失败||SWIFT|US|John Swith|123|ICBCAUBJ|123456|123456789|400|The swift code is not valid for the given bank country code: AU
+0000036|swift_code第5位和第6位与bank contry code不匹配(当bank contry code为CN),预期失败||SWIFT|US|John Swith|123|ICBCAUBJ|123456|123456789|400|The swift code is not valid for the given bank country code: CN
+0000037|swift_code为8位,预期成功||SWIFT|US|John Swith|123|ICBCUSBJ|123456|123456789|200|Bank details saved
+0000038|swift_code为11位,预期成功||SWIFT|US|John Swith|123|ICBCUSBJABC|123456|123456789|200|Bank details saved
+0000039|swift_code为9位,预期失败US||SWIFT|US|John Swith|123|ICBCUSBJA|123456|123456789|400|error
+0000040|swift_code为9位,预期失败CN||SWIFT|CN|John Swith|12345678|ICBCCNBJA|123456|123456789|400|error
+0000041|bsb为6位,bank country为AU,预期成功||SWIFT|AU|John Swith|12345678|ICBCAUBJA|123456|123456789|200|Bank details saved
+0000042|bsb为5位,bank country为AU,预期失败||SWIFT|AU|John Swith|12345678|ICBCAUBJA|12345|123456789|400|Length of 'bsb' should be 6
+0000043|bsb为7位,bank country为AU,预期失败||SWIFT|AU|John Swith|12345678|ICBCAUBJA|1234567|123456789|400|Length of 'bsb' should be 6
+00000044|bsb为空,bank country为AU,预期失败||SWIFT|AU|John Swith|12345678|ICBCAUBJ||123456789|400|'bsb' is required when bank country code is 'AU'
+0000045|bsb为空,bank country为US,预期成功||SWIFT|US|John Swith|12345678|ICBCUSBJ||123456789|200|Bank details saved
+0000046|bsb为空,bank country为CN,预期成功||SWIFT|CN|John Swith|12345678|ICBCCNBJ||123456789|200|Bank details saved
+0000047|aba为9位,bank country为US,预期成功|true|SWIFT|US|John Swith|12345678|ICBCUSBJA|123456|123456789|200|Bank details saved
+0000048|aba为8位,bank country为US,预期失败|true|SWIFT|US|John Swith|12345678|ICBCUSBJA|12345|12345678|400|Length of 'aba' should be 9
+0000049|aba为10位,bank country为US,预期失败|true|SWIFT|US|John Swith|12345678|ICBCUSBJA|1234567|1234567890|400|Length of 'aba' should be 9
+0000050|aba为空,bank country为US,预期失败|true|SWIFT|US|John Swith|12345678|ICBCUSBJ|123456||400|'bsb' is required when bank country code is 'US'
+0000051|aba为空,bank country为AU,预期成功|true|SWIFT|AU|John Swith|12345678|ICBCAUBJ|123456||200|Bank details saved
+0000052|aba为空,bank country为CN,预期成功|true|SWIFT|CN|John Swith|12345678|ICBCCNBJ|123456||200|Bank details saved

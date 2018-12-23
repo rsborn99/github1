@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">java test</td><td class="numi">52</td><td class="numi">40</td><td class="numi">0</td><td class="numi_attn">52</td><td class="numi">23.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">java test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="52">com.airwallex.bank.BankTest</td><td><a href="#m1"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m2"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m3"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m4"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m5"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m6"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m7"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m8"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m9"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m10"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m11"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m12"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m13"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m14"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m15"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m16"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m17"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m18"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m19"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m20"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m21"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m22"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m23"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m24"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m25"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m26"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m27"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m28"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m29"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m30"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m31"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m32"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m33"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m34"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m35"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m36"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m37"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m38"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m39"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m40"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m41"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m42"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m43"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m44"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m45"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m46"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m47"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m48"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m49"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m50"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m51"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr><tr class="failedodd"><td><a href="#m52"><b>testBank</b>  </a></td><td class="numi">12</td><td>1545578888315</td><td class="numi">13070</td></tr>
+<tr><th colspan="4">java test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="52">com.airwallex.bank.BankTest</td><td><a href="#m53"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m54"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m55"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m56"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m57"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m58"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m59"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m60"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m61"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m62"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m63"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m64"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m65"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m66"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m67"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m68"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m69"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m70"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m71"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m72"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m73"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m74"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m75"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m76"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m77"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m78"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m79"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m80"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m81"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m82"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m83"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m84"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m85"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m86"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m87"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m88"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m89"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m90"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m91"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m92"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m93"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m94"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m95"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m96"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m97"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m98"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m99"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m100"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m101"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m102"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m103"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr><tr class="passedodd"><td><a href="#m104"><b>testBank</b>  </a></td><td class="numi">40</td><td>1545578879074</td><td class="numi">23070</td></tr>
+</table>
+<h1>java test</h1>
+<h2 id="m1">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=1234567, bank_country_code=CN, bsb=123456, case_desc=bank_country_code为CN,account_number�?7个字符串,预期失败, caseid=0000028, msg=xxx, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [400] but found [200]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=CN, bsb=123456, case_desc=swift_code�?9�?,预期失败CN, caseid=0000040, msg=error, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJA}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [400] but found [200]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=12345, bank_country_code=AU, bsb=123456, case_desc=bank_country_code为AU,account_number�?5个字符串,预期失败, caseid=0000024, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=12345678901234567890, bank_country_code=CN, bsb=123456, case_desc=bank_country_code为CN,account_number�?21个字符串,预期失败, caseid=0000029, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code�?5位和�?6位与bank contry code不匹�?(当bank contry code为AU),预期失败, caseid=0000035, msg=The swift code is not valid for the given bank country code: AU, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [The swift code is not valid for the given bank country code: AU] but found [The swift code is not valid for the given bank country code: US]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=, bank_country_code=US, bsb=123456, case_desc=bank_country_code为US,account_number�?0个字符串,预期失败, caseid=0000020, msg=Length of account_number should be between 1 and 11 when bank_country_code is &apos;US&apos;, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [Length of account_number should be between 1 and 11 when bank_country_code is &apos;US&apos;] but found [&apos;account_number&apos; is required]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=1234567890, bank_country_code=AU, bsb=123456, case_desc=bank_country_code为AU,account_number�?10个字符串,预期失败, caseid=0000025, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code�?9�?,预期失败US, caseid=0000039, msg=error, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJA}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [400] but found [200]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=12345678901234567890, bank_country_code=CN, bsb=123456, case_desc=bank_country_code为CN,account_number�?20个字符串,预期成功, caseid=0000027, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [200] but found [400]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=123456789012345678, bank_country_code=US, bsb=123456, case_desc=bank_country_code为US,account_number�?18个字符串,预期失败, caseid=0000021, msg=Length of account_number should be between 1 and 11 when bank_country_code is &apos;US&apos;, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [Length of account_number should be between 1 and 11 when bank_country_code is &apos;US&apos;] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code�?5位和�?6位与bank contry code不匹�?(当bank contry code为CN),预期失败, caseid=0000036, msg=The swift code is not valid for the given bank country code: CN, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [The swift code is not valid for the given bank country code: CN] but found [The swift code is not valid for the given bank country code: US]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=123456, case_desc=aba为空,bank country为US,预期失败, caseid=0000050, msg=&apos;bsb&apos; is required when bank country code is &apos;US&apos;, payment_method=SWIFT, response_status=400, run=true, swift_code=ICBCUSBJ}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [400] but found [200]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+<br/>27 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=123456789, bank_country_code=AU, bsb=123456, case_desc=bank_country_code为AU,account_number�?9个字符串,预期成功, caseid=0000023, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method为其他字符串(如SWI),预期失败, caseid=0000006, msg=&apos;payment_method&apos; field required, the value should be either &apos;LOCAL&apos; or &apos;SWIFT&apos;, payment_method=SWI, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=1234567, case_desc=bsb�?7�?,bank country为AU,预期失败, caseid=0000043, msg=Length of &apos;bsb&apos; should be 6, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJA}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=, bsb=123456, case_desc=bank_country_code为空,预期失败, caseid=0000010, msg=&apos;bank_country_code&apos; is required, and should be one of &apos;US&apos;, &apos;AU&apos;, or &apos;CN&apos;, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=JP, bsb=123456, case_desc=bank_country_code为其他字符串(如JP),预期失败, caseid=0000012, msg=&apos;bank_country_code&apos; is required, and should be one of &apos;US&apos;, &apos;AU&apos;, or &apos;CN&apos;, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=12345678901234567, bank_country_code=US, bsb=123456, case_desc=bank_country_code为US,account_number�?17个字符串,预期成功, caseid=0000019, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=JohnJohn12, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name�?10个字�?,预期成功, caseid=0000014, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=CN, bsb=12345678, case_desc=swift_code�?5位和�?6位与bank contry code匹配(当bank contry code为CN),预期成功, caseid=0000032, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=12345678, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=12345, case_desc=aba�?8�?,bank country为US,预期失败, caseid=0000048, msg=Length of &apos;aba&apos; should be 9, payment_method=SWIFT, response_status=400, run=true, swift_code=ICBCUSBJA}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=1234567890, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=1234567, case_desc=aba�?10�?,bank country为US,预期失败, caseid=0000049, msg=Length of &apos;aba&apos; should be 9, payment_method=SWIFT, response_status=400, run=true, swift_code=ICBCUSBJA}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=AU, bsb=123456, case_desc=swift_code�?5位和�?6位与bank contry code匹配(当bank contry code为AU),预期成功, caseid=0000031, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method为SWIFT,预期成功, caseid=0000001, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method为空,预期失败, caseid=0000004, msg=&apos;payment_method&apos; field required, the value should be either &apos;LOCAL&apos; or &apos;SWIFT&apos;, payment_method=, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=J, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name�?1个字�?,预期失败, caseid=0000016, msg=Length of account_name should be between 2 and 10, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=Jo, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name�?2个字�?,预期成功, caseid=0000013, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=123456, case_desc=bsb�?6�?,bank country为AU,预期成功, caseid=0000041, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJA}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=, case_desc=bsb为空,bank country为US,预期成功, caseid=0000045, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=AU, bsb=123456, case_desc=bank_country_code为AU,预期成功, caseid=0000008, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=12345, case_desc=bsb�?5�?,bank country为AU,预期失败, caseid=0000042, msg=Length of &apos;bsb&apos; should be 6, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJA}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=杰克, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name�?2个中�?,预期成功, caseid=0000015, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=null, bsb=123456, case_desc=bank_country_code为null,预期失败, caseid=0000011, msg=&apos;bank_country_code&apos; is required, and should be one of &apos;US&apos;, &apos;AU&apos;, or &apos;CN&apos;, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith1, account_number=123, bank_country_code=US, bsb=123456, case_desc=account_name�?11个字�?,预期失败, caseid=0000017, msg=Length of account_name should be between 2 and 10, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=CN, bsb=, case_desc=bsb为空,bank country为CN,预期成功, caseid=0000046, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code�?5位和�?6位与bank contry code匹配(当bank contry code为US),预期成功, caseid=0000030, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method为null,预期失败, caseid=0000005, msg=&apos;payment_method&apos; field required, the value should be either &apos;LOCAL&apos; or &apos;SWIFT&apos;, payment_method=null, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code�?5位和�?6位与bank contry code不匹�?(当bank contry code为US),预期失败, caseid=0000034, msg=The swift code is not valid for the given bank country code: US, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code�?11�?,预期成功, caseid=0000038, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJABC}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method为LOCAL,预期成功, caseid=0000002, msg=Bank details saved, payment_method=LOCAL, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code�?8�?,预期成功, caseid=0000037, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code为空（当payment_method为SWIFT�?,预期失败, caseid=0000033, msg=&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;, payment_method=SWIFT, response_status=400, run=true, swift_code=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=, case_desc=bsb为空,bank country为AU,预期失败, caseid=00000044, msg=&apos;bsb&apos; is required when bank country code is &apos;AU&apos;, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=123456, case_desc=aba�?9�?,bank country为US,预期成功, caseid=0000047, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=true, swift_code=ICBCUSBJA}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=payment_method为swift,预期失败, caseid=0000003, msg=&apos;payment_method&apos; field required, the value should be either &apos;LOCAL&apos; or &apos;SWIFT&apos;, payment_method=swift, response_status=400, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=CN, bsb=123456, case_desc=bank_country_code为CN,预期成功, caseid=0000009, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=, account_name=John Swith, account_number=12345678, bank_country_code=AU, bsb=123456, case_desc=aba为空,bank country为AU,预期成功, caseid=0000051, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=true, swift_code=ICBCAUBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=1, bank_country_code=US, bsb=123456, case_desc=bank_country_code为US,account_number�?1个字符串,预期成功, caseid=0000018, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=12345678, bank_country_code=CN, bsb=123456, case_desc=bank_country_code为CN,account_number�?8个字符串,预期成功, caseid=0000026, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=, account_name=John Swith, account_number=12345678, bank_country_code=CN, bsb=123456, case_desc=aba为空,bank country为CN,预期成功, caseid=0000052, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=true, swift_code=ICBCCNBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=jack, account_number=123456, bank_country_code=AU, bsb=123456, case_desc=bank_country_code为AU,account_number�?6个字符串,预期成功, caseid=0000022, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCAUBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">com.airwallex.bank.BankTest:testBank</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{aba=123456789, account_name=John Swith, account_number=1234567, bank_country_code=US, bsb=123456, case_desc=bank_country_code为US,预期成功, caseid=0000007, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCUSBJ}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

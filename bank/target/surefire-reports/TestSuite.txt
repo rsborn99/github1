@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 52, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 23.935 sec <<< FAILURE! - in TestSuite
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.434 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found ['account_number' is required]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.408 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.359 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.359 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.406 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.343 sec  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.377 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.343 sec  <<< FAILURE!
+java.lang.AssertionError: expected [The swift code is not valid for the given bank country code: AU] but found [The swift code is not valid for the given bank country code: US]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.427 sec  <<< FAILURE!
+java.lang.AssertionError: expected [The swift code is not valid for the given bank country code: CN] but found [The swift code is not valid for the given bank country code: US]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.34 sec  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.406 sec  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+
+testBank(com.airwallex.bank.BankTest)  Time elapsed: 0.358 sec  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+

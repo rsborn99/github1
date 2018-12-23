@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Default Suite]">
+  <test name="java test(failed)">
+    <classes>
+      <class name="com.airwallex.bank.BankTest">
+        <methods>
+          <include name="testBank" invocation-numbers="19 20 23 24 26 27 28 34 35 38 39 49"/>
+        </methods>
+      </class> <!-- com.airwallex.bank.BankTest -->
+    </classes>
+  </test> <!-- java test(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

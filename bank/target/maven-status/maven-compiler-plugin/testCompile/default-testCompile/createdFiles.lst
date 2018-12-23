@@ -1,0 +1,6 @@
+com\airwallex\bank\HttpClientBank.class
+com\airwallex\util\CSVUtil.class
+com\airwallex\bank\BankTest.class
+com\airwallex\util\MapUtil.class
+com\airwallex\util\StringUtil.class
+com\airwallex\util\PropertiesUtil.class

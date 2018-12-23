@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="23.935" tests="52" errors="0" skipped="0" failures="12">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\program\java\jdk1.8\jre\bin"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\work\java\IDEAL\bank"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\work\java\IDEAL\bank"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\program\java\jdk1.8\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="testng.xml" value="true"/>
+    <property name="java.io.tmpdir" value="C:\Users\sunrise\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\program\maven\apache-maven-3.6.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\program\java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;D:\program\java\jdk1.8\bin;D:\program\java\jdk1.8\jre\bin;D:\program\maven\apache-maven-3.6.0\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\sunrise\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="maven.conf" value="D:\program\maven\apache-maven-3.6.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="D:\program\maven\apache-maven-3.6.0\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\sunrise"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="sunrise"/>
+    <property name="java.class.path" value="D:\program\maven\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\program\java\jdk1.8\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dtestng.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="java.ext.dirs" value="D:\program\java\jdk1.8\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\program\java\jdk1.8\jre\lib\resources.jar;D:\program\java\jdk1.8\jre\lib\rt.jar;D:\program\java\jdk1.8\jre\lib\sunrsasign.jar;D:\program\java\jdk1.8\jre\lib\jsse.jar;D:\program\java\jdk1.8\jre\lib\jce.jar;D:\program\java\jdk1.8\jre\lib\charsets.jar;D:\program\java\jdk1.8\jre\lib\jfr.jar;D:\program\java\jdk1.8\jre\classes"/>
+    <property name="sun.stderr.encoding" value="ms936"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\program\maven\apache-maven-3.6.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="ms936"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="1.38"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.346"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.343"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.281"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.364"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.359"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.359"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.411"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.328"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.306"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.751"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.777"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.769"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.421"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.416"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.39"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.46"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.39"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.437"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.434">
+    <failure message="expected [Length of account_number should be between 1 and 11 when bank_country_code is &apos;US&apos;] but found [&apos;account_number&apos; is required]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found ['account_number' is required]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=jack, account_number=, bank_country_code=US, bsb=123456, case_desc=bank_country_code涓篣S,account_number涓?0涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000020, msg=Length of account_number should be between 1 and 11 when bank_country_code is 'US', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}
+responseMap={msg='account_number' is required, statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:08 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"","aba":"123456789","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"jack","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:08 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:08 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.408">
+    <failure message="expected [Length of account_number should be between 1 and 11 when bank_country_code is &apos;US&apos;] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Length of account_number should be between 1 and 11 when bank_country_code is 'US'] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=jack, account_number=123456789012345678, bank_country_code=US, bsb=123456, case_desc=bank_country_code涓篣S,account_number涓?18涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000021, msg=Length of account_number should be between 1 and 11 when bank_country_code is 'US', payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJ}
+responseMap={msg=Length of account_number should be between 7 and 11 when bank_country_code is 'US', statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:08 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"123456789012345678","aba":"123456789","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"jack","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:09 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:09 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="1.061"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.37"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.359">
+    <failure message="expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=jack, account_number=12345, bank_country_code=AU, bsb=123456, case_desc=bank_country_code涓篈U,account_number涓?5涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000024, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}
+responseMap={msg=Length of account_number should be between 7 and 11 when bank_country_code is 'US', statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:10 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"12345","aba":"123456789","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"jack","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:10 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:10 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.359">
+    <failure message="expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=jack, account_number=1234567890, bank_country_code=AU, bsb=123456, case_desc=bank_country_code涓篈U,account_number涓?10涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000025, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}
+responseMap={msg=Length of account_number should be between 7 and 11 when bank_country_code is 'US', statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:10 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"1234567890","aba":"123456789","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"jack","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:11 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:11 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.367"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.406">
+    <failure message="expected [200] but found [400]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [400]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=jack, account_number=12345678901234567890, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,account_number涓?20涓瓧绗︿覆,棰勬湡鎴愬姛, caseid=0000027, msg=Bank details saved, payment_method=SWIFT, response_status=200, run=, swift_code=ICBCCNBJ}
+responseMap={msg=Length of account_number should be between 7 and 11 when bank_country_code is 'US', statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:11 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"12345678901234567890","aba":"123456789","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"jack","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.343">
+    <failure message="expected [400] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=jack, account_number=1234567, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,account_number涓?7涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000028, msg=xxx, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJ}
+responseMap={msg=Bank details saved, statusCode=200, isSuccess=success}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"1234567","aba":"123456789","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"jack","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.377">
+    <failure message="expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Bank details saved] but found [Length of account_number should be between 7 and 11 when bank_country_code is 'US']
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=jack, account_number=12345678901234567890, bank_country_code=CN, bsb=123456, case_desc=bank_country_code涓篊N,account_number涓?21涓瓧绗︿覆,棰勬湡澶辫触, caseid=0000029, msg=Bank details saved, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJ}
+responseMap={msg=Length of account_number should be between 7 and 11 when bank_country_code is 'US', statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"12345678901234567890","aba":"123456789","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"jack","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:12 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.343"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.401"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.392"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.374"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.462"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.343">
+    <failure message="expected [The swift code is not valid for the given bank country code: AU] but found [The swift code is not valid for the given bank country code: US]" type="java.lang.AssertionError">java.lang.AssertionError: expected [The swift code is not valid for the given bank country code: AU] but found [The swift code is not valid for the given bank country code: US]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code绗?5浣嶅拰绗?6浣嶄笌bank contry code涓嶅尮閰?(褰揵ank contry code涓篈U),棰勬湡澶辫触, caseid=0000035, msg=The swift code is not valid for the given bank country code: AU, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}
+responseMap={msg=The swift code is not valid for the given bank country code: US, statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:14 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"123","aba":"123456789","bank_country_code":"US","swift_code":"ICBCAUBJ","account_name":"John Swith","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:15 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:15 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.427">
+    <failure message="expected [The swift code is not valid for the given bank country code: CN] but found [The swift code is not valid for the given bank country code: US]" type="java.lang.AssertionError">java.lang.AssertionError: expected [The swift code is not valid for the given bank country code: CN] but found [The swift code is not valid for the given bank country code: US]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:39)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code绗?5浣嶅拰绗?6浣嶄笌bank contry code涓嶅尮閰?(褰揵ank contry code涓篊N),棰勬湡澶辫触, caseid=0000036, msg=The swift code is not valid for the given bank country code: CN, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCAUBJ}
+responseMap={msg=The swift code is not valid for the given bank country code: US, statusCode=400, isSuccess=error}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:15 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"123","aba":"123456789","bank_country_code":"US","swift_code":"ICBCAUBJ","account_name":"John Swith","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:15 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+十二月 23, 2018 11:28:15 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:400
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.375"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.406"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.34">
+    <failure message="expected [400] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=John Swith, account_number=123, bank_country_code=US, bsb=123456, case_desc=swift_code涓?9浣?,棰勬湡澶辫触US, caseid=0000039, msg=error, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCUSBJA}
+responseMap={msg=Bank details saved, statusCode=200, isSuccess=success}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:16 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"123","aba":"123456789","bank_country_code":"US","swift_code":"ICBCUSBJA","account_name":"John Swith","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:16 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+十二月 23, 2018 11:28:16 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.406">
+    <failure message="expected [400] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+</failure>
+    <system-out><![CDATA[request={aba=123456789, account_name=John Swith, account_number=12345678, bank_country_code=CN, bsb=123456, case_desc=swift_code涓?9浣?,棰勬湡澶辫触CN, caseid=0000040, msg=error, payment_method=SWIFT, response_status=400, run=, swift_code=ICBCCNBJA}
+responseMap={msg=Bank details saved, statusCode=200, isSuccess=success}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:16 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"12345678","aba":"123456789","bank_country_code":"CN","swift_code":"ICBCCNBJA","account_name":"John Swith","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:17 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+十二月 23, 2018 11:28:17 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.405"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.369"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.39"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.41"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.329"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.374"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.986"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.368"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.344"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.358">
+    <failure message="expected [400] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: expected [400] but found [200]
+	at com.airwallex.bank.BankTest.testBank(BankTest.java:38)
+</failure>
+    <system-out><![CDATA[request={aba=, account_name=John Swith, account_number=12345678, bank_country_code=US, bsb=123456, case_desc=aba涓虹┖,bank country涓篣S,棰勬湡澶辫触, caseid=0000050, msg='bsb' is required when bank country code is 'US', payment_method=SWIFT, response_status=400, run=true, swift_code=ICBCUSBJ}
+responseMap={msg=Bank details saved, statusCode=200, isSuccess=success}
+]]></system-out>
+    <system-err><![CDATA[十二月 23, 2018 11:28:21 下午 com.airwallex.bank.HttpClientBank post
+信息: parameters:{"bsb":"123456","account_number":"12345678","aba":"","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Swith","payment_method":"SWIFT"}
+十二月 23, 2018 11:28:21 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+十二月 23, 2018 11:28:21 下午 com.airwallex.bank.HttpClientBank post
+信息: statusCode:200
+]]></system-err>
+  </testcase>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.415"/>
+  <testcase name="testBank" classname="com.airwallex.bank.BankTest" time="0.359"/>
+</testsuite>
