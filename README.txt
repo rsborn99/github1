@@ -10,9 +10,10 @@
 4、swift_code只能为8或11位，实际9位也可以
 5、当bankcountry code 是us 时，aba 参数是必填参数，实际为空也能成功
 
+由于时间关系，可能有些defects/issues 在提交这份测试project的时候还没有被发现，我会在接下来的时间尽量发现所有defects/issues。抱歉。
 
 
-三、测试project 的github 地址：
+三、测试project 的github 地址：https://github.com/rsborn99/github1
 
 四、如果需要用命令行执行：请在保证安装了 java 、maven、testng的情况下，到工程根目录执行： mvn clean test -Dtestng.xml
 
